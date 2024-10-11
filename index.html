@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/ac1aaaa398.js" crossorigin="anonymous"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-house-medical"></i>
+        <h1>Vida Leve</h1>
+    </header>
+
+    <div class="container">
+        <h2>Calculadora de IMC</h2>
+        <div class="div-inputs">
+            <div class="div-inputinho">
+                <label>Altura (m):</label>
+                <input type="number" placeholder="Sua altura em metros" id="inputAltura">
+            </div>
+            <div class="div-inputinho">
+                <label>Peso (kg):</label>
+                <input type="number" placeholder="Seu peso em quilos" id="inputPeso">
+            </div>
+        </div>
+        <button id="enviarButton">Calcular</button>
+    </div>
+
+    <div class="div-resposta">
+        <p class="subtitulo">seu IMC é:</p>
+        <p id="imc">~</p>
+        <p id="classificacao">Descubra!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-bg: #090b33;
+    --cor-sec: #FFFFFF; 
+    --cor-button: #131461;
+    --cor-imc: #7780ff;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-img.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+header {
+    top: 0;
+    background: none;
+    display: flex;
+    gap: 10px;
+    & h1, i{
+        color: var(--cor-sec);
+        font-size: 1.7rem;
+    }
+}
+
+.container {
+    background-color: var(--cor-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-radius: 30px;
+    gap: 30px;
+    & h2 {
+        text-align: center;
+        color: var(--cor-sec);
+        font-size: 1.8rem;
+    }
+}
+
+.div-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & .div-inputinho {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        & label {
+            color: var(--cor-sec);
+            font-size: 0.9rem;
+        }
+        & input {
+            outline: none;
+            border-radius: 5px;
+            padding: 7px;
+            border: none;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+#enviarButton {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    color: var(--cor-sec);
+    background-color: var(--cor-button);
+    padding: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transform: 0.1s;
+    &:hover {
+        background-color: #232581;
+    }
+}
+
+.div-resposta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & .subtitulo {
+        font-size: 1.3rem;
+        color: var(--cor-sec);
+        font-weight: bold;
+    }
+    & #imc {
+        align-items: flex-end;
+        color: var(--cor-imc);
+        font-weight: bold;
+        font-size: 3.4rem;
+    }
+    & #classificacao {
+        font-size: 1rem;
+        color: var(--cor-sec);
+    }
+}
+
+@media (max-width: 426px) {
+    * {
+        font-size: 15px;
+    }
+}
